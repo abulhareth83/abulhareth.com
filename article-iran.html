@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Was the War on Iran Inevitable? — Laith Abulhareth</title>
+<meta name="description" content="A systematic analysis of the theories explaining U.S. military action against Iran — and why most of them fail. By Laith Abulhareth.">
+<meta name="author" content="Laith Abulhareth">
+<link rel="alternate" hreflang="en" href="https://abulhareth.com/article-iran.html">
+<link rel="alternate" hreflang="ar" href="https://abulhareth.com/ar/article-iran.html">
+<link rel="alternate" hreflang="x-default" href="https://abulhareth.com/article-iran.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#f9f7f4;--surface:#fff;--text:#181818;
+  --muted:#5c5c5c;--faint:#a0a0a0;
+  --border:#e4dfd9;--border-med:#cdc7c0;
+  --font-en:'Source Serif 4',Georgia,serif;
+  --font-ar:'Noto Naskh Arabic',serif;
+  --font-display:'Playfair Display',Georgia,serif;
+  --font-name:'Amiri',serif;
+  --font-ui:'DM Sans',sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--font-en);min-height:100vh}
+.site-header{background:#181818;height:66px;display:flex;align-items:center;justify-content:center;padding:0 1.5rem;position:sticky;top:0;z-index:100}
+.site-header-inner{width:680px;max-width:100%;display:flex;align-items:center;justify-content:center}
+.site-name{display:flex;align-items:center;gap:14px;text-decoration:none}
+.name-en{font-family:var(--font-name);font-size:26px;font-weight:700;letter-spacing:0.02em;color:#fff}
+.name-div{width:1px;height:22px;background:rgba(255,255,255,0.25)}
+.name-ar{font-family:var(--font-name);font-size:26px;font-weight:700;color:#fff;direction:rtl}
+.hero{width:100%;height:280px;background:#1a1a1a;display:flex;align-items:center;justify-content:center}
+.hero-placeholder{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#555;font-family:var(--font-ui)}
+.main{max-width:680px;margin:0 auto;padding:3rem 1.5rem 5rem}
+.article-meta{font-size:11px;letter-spacing:0.06em;color:var(--faint);margin-bottom:0.9rem;font-family:var(--font-ui);font-weight:300}
+.article-title{font-family:var(--font-display);font-size:38px;font-weight:400;line-height:1.2;color:var(--text);margin-bottom:0.7rem;letter-spacing:-0.01em}
+.byline{font-size:13px;color:var(--muted);font-family:var(--font-ui);font-weight:300;margin-bottom:1.6rem}
+.article-controls{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-bottom:2.4rem;background:var(--bg);position:sticky;top:66px;z-index:90}
+.tog-group{display:flex;align-items:center;gap:7px}
+.tog-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--faint);font-family:var(--font-ui);font-weight:300;white-space:nowrap}
+.lang-switch{display:flex;border:1px solid var(--border-med);border-radius:4px;overflow:hidden}
+.lang-btn{padding:5px 14px;font-size:12px;font-family:var(--font-ui);font-weight:300;color:var(--muted);text-decoration:none;display:inline-block;background:transparent;line-height:1.3;white-space:nowrap;transition:all 0.14s}
+.lang-btn.active{background:var(--text);color:#fff}
+.lang-btn+.lang-btn{border-left:1px solid var(--border-med)}
+.lang-btn:hover:not(.active){background:#f0ece6;color:var(--text)}
+.tog-row{display:flex;border:1px solid var(--border-med);border-radius:4px;overflow:hidden}
+.tog-btn{padding:5px 14px;font-size:12px;font-family:var(--font-ui);font-weight:300;background:transparent;border:none;cursor:pointer;color:var(--muted);transition:all 0.14s;white-space:nowrap;line-height:1.3}
+.tog-btn+.tog-btn{border-left:1px solid var(--border-med)}
+.tog-btn.active{background:var(--text);color:#fff}
+.tog-btn:hover:not(.active){background:#f0ece6;color:var(--text)}
+
+/* Article content */
+.content{font-family:var(--font-en);font-size:18.5px;line-height:1.88;color:var(--text)}
+.content p{margin-bottom:1.5rem}
+.content h2{font-family:var(--font-display);font-size:19px;font-weight:500;margin:2.8rem 0 0.85rem;color:var(--text)}
+.content hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
+
+/* Nested bullet styles */
+.content .b-list{list-style:none;padding:0;margin:0 0 1.5rem 0}
+.content .b-item{display:flex;align-items:flex-start;gap:12px;padding:0.65rem 0;border-bottom:1px solid var(--border);font-size:17.5px;line-height:1.75}
+.content .b-item:last-child{border-bottom:none}
+.content .b-bullet{color:var(--faint);flex-shrink:0;margin-top:3px;font-size:15px;user-select:none}
+.content .b-text{flex:1}
+/* Level 2 */
+.content .b-sub{list-style:none;padding:0;margin:0.5rem 0 0.2rem 0}
+.content .b-sub-item{display:flex;align-items:flex-start;gap:10px;padding:0.4rem 0;font-size:16.5px;line-height:1.7;color:var(--muted)}
+.content .b-sub-bullet{color:var(--border-med);flex-shrink:0;margin-top:4px;font-size:13px;user-select:none}
+.content .b-sub-text{flex:1}
+/* Level 3 */
+.content .b-sub2{list-style:none;padding:0;margin:0.3rem 0 0.1rem 0}
+.content .b-sub2-item{display:flex;align-items:flex-start;gap:9px;padding:0.3rem 0;font-size:15.5px;line-height:1.65;color:var(--faint)}
+.content .b-sub2-bullet{color:var(--border);flex-shrink:0;margin-top:4px;font-size:11px;user-select:none}
+.content .b-sub2-text{flex:1}
+
+.article-end{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--border);font-size:12px;color:var(--faint);font-family:var(--font-ui);font-weight:300;letter-spacing:0.04em}
+#wrap{transition:opacity 0.18s ease}
+#wrap.fading{opacity:0}
+.site-footer{background:#181818;padding:2.5rem 1.5rem;margin-top:4rem}
+.site-footer-inner{max-width:680px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:0.7rem}
+.footer-name{display:flex;align-items:center;gap:12px}
+.footer-name-en{font-family:var(--font-name);font-size:20px;font-weight:700;color:#fff;letter-spacing:0.02em}
+.footer-div{width:1px;height:18px;background:rgba(255,255,255,0.25)}
+.footer-name-ar{font-family:var(--font-name);font-size:20px;font-weight:700;color:#fff}
+.footer-about{font-size:12px;color:rgba(255,255,255,0.4);font-family:var(--font-ui);font-weight:300;text-align:center;line-height:1.7}
+.footer-about-ar{font-size:13px;color:rgba(255,255,255,0.4);font-family:var(--font-ar);text-align:center;line-height:1.8;direction:rtl;unicode-bidi:plaintext}
+.footer-copy{font-size:11px;color:rgba(255,255,255,0.2);font-family:var(--font-ui);font-weight:300;letter-spacing:0.05em;margin-top:0.2rem}
+@media(max-width:600px){
+  .site-header{height:56px}.name-en,.name-ar{font-size:20px}
+  .article-controls{top:56px}.tog-btn,.lang-btn{padding:5px 10px;font-size:11px}
+  .main{padding:2rem 1.1rem 4rem}.article-title{font-size:27px}.content{font-size:17px}
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-name" href="index.html">
+      <span class="name-en">Laith Abulhareth</span>
+      <span class="name-div"></span>
+      <span class="name-ar">ليث أبو الحارث</span>
+    </a>
+  </div>
+</header>
+<div class="hero"><img style="filter:grayscale(100%)" src="images/trump-prayer.jpg" alt="Trump surrounded by evangelical clergy praying in the Oval Office" onerror="this.style.display='none'"></div>
+<main class="main">
+  <div id="wrap">
+    <p class="article-meta">Analysis · April 2026</p>
+    <h1 class="article-title">Why Was the War on Iran Inevitable?</h1>
+    <p class="byline">By Laith Abulhareth</p>
+    <div class="article-controls">
+      <div class="tog-group">
+        <span class="tog-label">Format</span>
+        <div class="tog-row">
+          <button class="tog-btn active" id="btn-article" onclick="setFormat('article')">Article</button>
+          <button class="tog-btn" id="btn-bullets" onclick="setFormat('bullets')">Bullets</button>
+        </div>
+      </div>
+      <div class="tog-group">
+        <div class="lang-switch">
+          <a class="lang-btn active" href="article-iran.html">English</a>
+          <a class="lang-btn" href="ar/article-iran.html">العربية</a>
+        </div>
+        <span class="tog-label">Language</span>
+      </div>
+    </div>
+    <div class="content" id="content"></div>
+    <p class="article-end">Originally published on abulhareth.com · April 2026</p>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-name">
+      <span class="footer-name-en">Laith Abulhareth</span>
+      <span class="footer-div"></span>
+      <span class="footer-name-ar">ليث أبو الحارث</span>
+    </div>
+    <p class="footer-about">Essays, videos, and books by Laith Abulhareth.</p>
+    <p class="footer-about-ar">مقالات وفيديوهات وكتب بقلم ليث أبو الحارث.</p>
+    <p class="footer-copy">&copy; 2026 Laith Abulhareth · All rights reserved</p>
+  </div>
+</footer>
+<script>
+// Nested bullet helper
+// Each item: {t, v}  where t = "p"|"h2"|"hr"|"b"
+// "b" items have v = array of nodes: {text, sub:[{text, sub2:[str]}]}
+function renderBullets(nodes){
+  let h='<ul class="b-list">';
+  nodes.forEach(n=>{
+    h+=`<li class="b-item"><span class="b-bullet">–</span><span class="b-text">${n.text}`;
+    if(n.sub&&n.sub.length){
+      h+='<ul class="b-sub">';
+      n.sub.forEach(s=>{
+        h+=`<li class="b-sub-item"><span class="b-sub-bullet">○</span><span class="b-sub-text">${s.text}`;
+        if(s.sub2&&s.sub2.length){
+          h+='<ul class="b-sub2">';
+          s.sub2.forEach(s2=>{h+=`<li class="b-sub2-item"><span class="b-sub2-bullet">▸</span><span class="b-sub2-text">${s2}</span></li>`;});
+          h+='</ul>';
+        }
+        h+='</span></li>';
+      });
+      h+='</ul>';
+    }
+    h+='</span></li>';
+  });
+  return h+'</ul>';
+}
+
+const article=[
+  {t:"p",v:"Many analysts have asked: why did the United States decide to wage war on Iran? There are several theories, but they differ considerably in terms of analytical rigor and explanatory power."},
+  {t:"hr"},{t:"h2",v:"1. Rationality in an Irrational War"},
+  {t:"p",v:"The core problem begins with a flawed assumption: Iran believed the United States always acts according to rational strategic logic. In reality, Washington frequently makes decisions that exceed or contradict direct strategic calculations."},
+  {t:"p",v:"Interpreting the war solely through the lens of American rationality produces clear contradictions with observable reality. Iran tried to act rationally — it pursued genuine negotiations — but these efforts ended in political and military escalation that revealed the ultimate goal was never negotiation. It was regime change."},
+  {t:"p",v:"The assassination of Hezbollah's former Secretary-General, Hassan Nasrallah, illustrates this complexity. Nasrallah met Noam Chomsky in 2006 and adopted his imperialist framework, concluding that the U.S. would eventually abandon \"Israel\" if the costs became too high. That assumption proved fatal. The U.S.–\"Israeli\" relationship is more complex than imperialism accounts for, and imperialism alone cannot explain the alignment of U.S. policies or the decision to go to war with Iran."},
+  {t:"hr"},{t:"h2",v:"2. Superficial Analyses"},
+  {t:"h2",v:"War for elections or public distraction"},
+  {t:"p",v:"Some analysts claim war is used to serve electoral interests or distract the public. Looking at a single event may appear to support this. But the broader picture reveals a consistent, interconnected pattern that holds across different administrations and different electoral cycles. That consistency alone disqualifies the electoral explanation — any political benefit is secondary, not the driver."},
+  {t:"h2",v:"War to cover scandals"},
+  {t:"p",v:"The claim that war is used to bury political scandals — Epstein being the favored example — fails on similar grounds. It cannot account for the general alignment of U.S. policies across decades, and it cannot explain how those policies consistently align with the interests of actors outside the United States. Major wars are not instruments of short-term political hygiene."},
+  {t:"hr"},{t:"h2",v:"3. Ideological Analyses"},
+  {t:"h2",v:"Is the U.S. fighting Islam?"},
+  {t:"p",v:"This is a weak explanation. The U.S. has historically supported groups presenting themselves as Islamic: Al-Qaeda, the Muslim Brotherhood, Saudi Arabia before its recent repositioning, and most recently the new Syrian government under Ahmad al-Shar'a — who led Jabhat al-Nusra, Al-Qaeda's Syrian branch — which received clear U.S. support. The target is not Islam. The target is specific governments and resistance movements that stand in a particular geopolitical way."},
+  {t:"h2",v:"Liberating the Iranian people"},
+  {t:"p",v:"The claim that the war aims to liberate the Iranian people does not survive contact with reality. Iranian liberals rallied around their government against the U.S. The majority of Iran's women's football team returned from Australia despite active efforts to grant them asylum. And then there is day one of the war: at least 110 Iranian children killed, 54 of them girls. Perhaps they were liberated before they had the chance to become women."},
+  {t:"hr"},{t:"h2",v:"4. The Imperialist Argument"},
+  {t:"p",v:"This is not a fringe argument, and it did not originate in Western academia. The Palestinian and Arab left — most systematically the PFLP under George Habash — built their entire strategic framework on the premise that \"Israel\" could not be understood in isolation from American imperialism. Samir Amin developed this into a more formal analytical claim: that \"Israel\" functions as an advanced outpost of Western and American imperialism in the Arab world — not merely a colonial project in itself, but a structural instrument of external imperial domination."},
+  {t:"p",v:"The most prominent Western voice to systematize this argument was Noam Chomsky. In his framework, \"Israel\" is not a liability that the U.S. tolerates for domestic political reasons — it is a rational strategic asset. Chomsky explicitly disagrees with Mearsheimer and Walt — he thinks they overstate the lobby's independent power and understate the degree to which U.S. policy reflects the genuine preferences of the American foreign policy establishment."},
+  {t:"p",v:"It is worth granting, at least hypothetically, that \"Israel's\" creation may have served Western imperial interests at its origin. But even granting it entirely, it does not follow that \"Israel\" remains a constant extension of Western will. In politics, created things do not stay created. A project with its own state apparatus, its own military, its own ideological drive, and its own sophisticated lobbying infrastructure does not remain a tool. It becomes an actor — one capable of shaping, redirecting, and ultimately partly owning the power that originally produced it. The tail, as it were, developing the musculature to wag the dog."},
+  {t:"p",v:"Nasrallah's 2006 meeting with Chomsky wasn't a courtesy call — it reflected a genuine strategic alignment with the framework. If \"Israel\" is merely a tool of American imperial interest, then it becomes disposable the moment it stops being useful. The logic was coherent. The problem was that it described a relationship that no longer existed in the form Chomsky had mapped."},
+  {t:"p",v:"The U.S. maintains major bases and military presence across the Middle East: in Qatar, Bahrain, Kuwait, the UAE, Jordan, and elsewhere. It has cultivated a broad network of pro-American governments throughout the region. It has instruments far more efficient than military proxy relationships — sanctions, dollar dominance, IMF conditionality, World Bank leverage. What the imperialist framework ultimately cannot explain is the cost side of the equation. Gaza 2023 alone — the international isolation, the ICC proceedings, the economic costs, the generational damage to American soft power — would have been more than sufficient to trigger a reassessment under any rational imperial logic. The unconditionality is what imperialism cannot explain."},
+  {t:"hr"},{t:"h2",v:"5. The Neoliberal Argument"},
+  {t:"p",v:"Some scholars, most notably David Harvey, argue that many wars are fundamentally about neoliberal restructuring. Iraq became a laboratory: privatization, market liberalization, foreign investment, restructuring of state industries. But neoliberalization typically does not require war. The IMF, the World Bank, and political pressure have achieved neoliberal reforms across dozens of countries without military intervention. The war created precisely the instability that makes neoliberal markets function poorly. Applied to Iran, a far more complex and resilient economy, the argument defeats itself even more forcefully."},
+  {t:"hr"},{t:"h2",v:"6. Scientistic Geopolitics"},
+  {t:"h2",v:"War for oil?"},
+  {t:"p",v:"The U.S. did not monopolize Iraqi oil in 2003 — contracts were distributed to international companies, and the war actively threatened global energy market stability. A war with Iran that risks closing the Strait of Hormuz entirely is an even more self-defeating proposition. The energy security explanation is insufficient."},
+  {t:"h2",v:"War to contain China?"},
+  {t:"p",v:"A war that drains American resources, credibility, and strategic bandwidth weakens the U.S. precisely before its more consequential confrontation with China. The U.S. strategic priority is Taiwan, not Tehran. Economic interdependence further complicates any confrontation. This theory defeats itself."},
+  {t:"hr"},{t:"h2",v:"7. The Most Plausible Theory: The \"Israeli\" Lobby"},
+  {t:"p",v:"From a direct U.S. strategic perspective, the war on Iran is difficult to justify. The costs are high, the risks are regional and international, and the direct gains for the United States are limited. But the war makes considerably more sense when viewed through the lens of \"Israeli\" strategic interests. Iran is \"Israel's\" sole remaining enemy, and American political elites with strong pro-\"Israel\" alignments have worked, over decades, to frame confronting Iran as an American strategic priority."},
+  {t:"p",v:"John Mearsheimer and Stephen Walt, in The Israel Lobby and U.S. Foreign Policy, offer the most explanatory account of the Iraq War precedent. Removing Saddam Hussein served \"Israeli\" strategic interests directly. \"Israeli\" leaders openly supported the invasion. The policymakers most aggressively advocating for war consistently emphasized \"Israeli\" security concerns. This logic was rational for \"Israel,\" even if it was irrational for the United States. It is alliance-driven logic, operating through domestic political influence inside the U.S. itself. This is the same logic, with the same structure, that now applies to Iran."},
+  {t:"p",v:"For decades, U.S. leaders attempted to reconcile genuine strategic interests with a non-rational commitment to aligning America with the project of a \"Greater Israel.\" Under Trump in 2026, the United States abandoned its contradictions, embracing what can only be called self-consistent irrationality: a coherent internal logic that simply does not look at American interests."},
+  {t:"p",v:"The religious and ideological dimension of this shift is visible and open. Before the February 2026 war on Iran, Senator Lindsey Graham made explicitly biblical statements in support of the coming campaign. Secretary of Defense Pete Hegseth did the same. In 2025, Secretary of State Marco Rubio appeared on an American television channel with a cross drawn on his forehead while discussing Gaza. Trump appeared at the White House surrounded by Christian clergy praying over foreign policy. The religious dimension of U.S. decision-making had ceased to be a background condition. It had become the operating system."},
+  {t:"p",v:"Through sustained, effective political and financial effort, the \"Israeli\" lobby succeeded in reshaping American politics until it fully represented \"Israeli\" interests — not as a foreign policy choice but as a domestic political reality. The logical conclusion of that decades-long project is the current administration: one in which Evangelical Christianity became the operative ideology of the state, giving the relationship with \"Israel\" a theological grounding that places it beyond rational cost-benefit calculation. It is not confusion or contradiction. It is a different rationality entirely — one in which \"Israel's\" interests and God's will have become, for those in power, the same thing."},
+  {t:"hr"},{t:"h2",v:"Conclusion"},
+  {t:"p",v:"The war on Iran is not random and not impulsive. It is part of a long-term strategic pattern at the intersection of U.S. institutional inertia and \"Israeli\" strategic objectives. Superficial theories fail to explain the consistency of U.S. policy across administrations, the depth of the lobby's influence, or the specific character of decision-making under Trump."},
+  {t:"p",v:"The war is rational within the framework of \"Israeli\" strategic interests. It occurs at the expense of American resources, American strategic positioning, global stability, and — on day one — the lives of 110 Iranian children. The United States is not simply an ally of \"Israel.\" It is a strategic instrument for the achievement of \"Israeli\" objectives. The tail really does wag the dog."},
+  {t:"p",v:"Which is why any ceasefire or end-of-war agreement that leaves the Iranian state intact resolves nothing. The first direct war — which began in June 2025 — ended without ending anything, because the structural condition that produces the war remained untouched: the Iranian state exists, it is deep, and \"Israel\" considers that existence an existential threat it cannot coexist with indefinitely."},
+  {t:"p",v:"The nuclear question clarifies this precisely. The fear is not that Iran will use nuclear weapons against \"Israel.\" Anyone who understands deterrence theory knows that mutual nuclear capability is a guarantee against use, not a path toward it. What \"Israel\" fears is not an Iranian warhead being launched. What it fears is an Iranian warhead existing. Because its existence would make the Iranian state permanently unkillable — it would place the resistance project under a deterrence umbrella that no conventional military campaign could pierce. Nuclear weapons would not give Iran the ability to destroy \"Israel.\" They would give Iran the ability to survive \"Israel.\" That is the threat. Not the warhead. The permanence."},
+  {t:"p",v:"As long as the Iranian state exists in its current form and without nuclear weapons, another war is not a possibility — it is a structural certainty. Based on the theory that has most consistently explained \"Israel's\" behavior and America's foreign policy alignment, that next war will happen before January 20, 2029, the date Donald Trump's current presidency ends. Trump is not an aberration in the relationship between Washington and \"Israel.\" He is its most honest expression. And \"Israel\" knows that the window he represents — the political cover, the military cooperation, the ideological fusion — will not remain open indefinitely. The question is not whether. It is when."}
+];
+
+const bullets=[
+  {t:"h2",v:"The core question"},
+  {t:"b",v:[
+    {text:"Why did the U.S. go to war with Iran?",sub:[
+      {text:"Many theories exist."},
+      {text:"Most fail to explain the full consistent pattern."},
+      {text:"One explains it consistently — and predicted the future accurately."}
+    ]}
+  ]},
+  {t:"h2",v:"1. The rationality trap"},
+  {t:"b",v:[
+    {text:"Iran assumed the U.S. always acts rationally.",sub:[
+      {text:"Built its entire strategy on this assumption."},
+      {text:"Pursued genuine negotiations in good faith."}
+    ]},
+    {text:"The goal was never negotiation.",sub:[
+      {text:"It was regime change."}
+    ]},
+    {text:"Nasrallah's fatal miscalculation.",sub:[
+      {text:"Met Chomsky in 2006, adopted his imperialist framework."},
+      {text:"Concluded: U.S. will abandon \"Israel\" when costs get too high.",sub2:[
+        "The logic was coherent.",
+        "The premise was wrong — the relationship had changed."
+      ]}
+    ]}
+  ]},
+  {t:"h2",v:"2. Superficial theories — both fail"},
+  {t:"b",v:[
+    {text:"Elections / distraction.",sub:[
+      {text:"One event can look like this."},
+      {text:"A consistent 40-year pattern across administrations cannot."},
+      {text:"Any electoral benefit is secondary, not the driver."}
+    ]},
+    {text:"Covering scandals.",sub:[
+      {text:"Cannot explain decades of policy alignment."},
+      {text:"Cannot explain alignment with interests outside the U.S."},
+      {text:"Major wars are not short-term political hygiene."}
+    ]}
+  ]},
+  {t:"h2",v:"3. Ideological theories — both fail"},
+  {t:"b",v:[
+    {text:"Fighting Islam.",sub:[
+      {text:"U.S. backed Al-Qaeda affiliates."},
+      {text:"Backed the Muslim Brotherhood."},
+      {text:"Backed al-Shar'a — who ran Al-Qaeda's Syrian branch — as Syria's new government."},
+      {text:"The target is specific governments in a specific geopolitical position, not Islam."}
+    ]},
+    {text:"Liberating Iranians.",sub:[
+      {text:"Iranian liberals rallied behind their government."},
+      {text:"Women's football team flew home from Australia, refused asylum."},
+      {text:"Day one: 110 children killed, 54 girls.",sub2:[
+        "Perhaps liberated before they became women."
+      ]}
+    ]}
+  ]},
+  {t:"h2",v:"4. The imperialist argument — sophisticated but ultimately fails"},
+  {t:"b",v:[
+    {text:"Not a fringe argument — originated in Palestinian and Arab left.",sub:[
+      {text:"PFLP under George Habash: can't confront \"Israel\" without confronting America behind it."},
+      {text:"Samir Amin: \"Israel\" as structural instrument of Western imperial domination."},
+      {text:"Chomsky: \"Israel\" as rational strategic asset, not lobby-driven liability.",sub2:[
+        "Explicitly disagrees with Mearsheimer/Walt — overstating the lobby, understating genuine imperial interest."
+      ]}
+    ]},
+    {text:"Worth granting: \"Israel's\" creation may have served Western imperial purposes at its origin.",sub:[
+      {text:"But created things don't stay created."},
+      {text:"\"Israel\" now has its own state, military, ideology, sophisticated lobby inside the world's most powerful \"liberal democracy.\""},
+      {text:"It became an actor, not a tool.",sub2:[
+        "The tail developing the musculature to wag the dog."
+      ]}
+    ]},
+    {text:"Why the framework fails now.",sub:[
+      {text:"U.S. has bases and military presence — including joint arrangements — across Qatar, Bahrain, Kuwait, UAE, Jordan.",sub2:[
+        "Doesn't need \"Israel\" as a military foothold."
+      ]},
+      {text:"Already has a broad network of pro-American governments throughout the region.",sub2:[
+        "Doesn't need \"Israel\" for regional influence."
+      ]},
+      {text:"Has sanctions, dollar dominance, IMF tools.",sub2:[
+        "Doesn't need \"Israel\" to impose economic interests."
+      ]}
+    ]},
+    {text:"The decisive problem: unconditionality.",sub:[
+      {text:"A rational imperial power calibrates its client relationships."},
+      {text:"Gaza 2023 alone — ICC, international isolation, generational damage to soft power — would have triggered reassessment."},
+      {text:"The U.S. didn't reassess."},
+      {text:"The unconditionality is what imperialism cannot explain."}
+    ]}
+  ]},
+  {t:"h2",v:"5. The neoliberal argument — real but insufficient"},
+  {t:"b",v:[
+    {text:"David Harvey: many wars are about neoliberal restructuring, not the stated rationale.",sub:[
+      {text:"Iraq as the clearest case study.",sub2:[
+        "Became a privatization laboratory.",
+        "Restructuring of state industries, rewriting investment law."
+      ]}
+    ]},
+    {text:"Why it fails.",sub:[
+      {text:"Neoliberalism doesn't require war.",sub2:[
+        "IMF and World Bank achieve this without tanks.",
+        "Many countries adopted neoliberal \"reforms\" without military intervention."
+      ]},
+      {text:"Iraq wasn't critical enough to global neoliberalism.",sub2:[
+        "Less important than China, India, or Brazil."
+      ]},
+      {text:"War created exactly the instability neoliberal markets need to avoid.",sub2:[
+        "Weak institutions, destroyed infrastructure, chronic insecurity.",
+        "Investors prefer stability."
+      ]},
+      {text:"\"Reforms\" were a consequence, not a cause."},
+      {text:"Applied to Iran: an even more self-defeating proposition.",sub2:[
+        "Far more complex and resilient economy than Iraq."
+      ]}
+    ]}
+  ]},
+  {t:"h2",v:"6. Scientistic geopolitics — the appearance of rigor without the substance"},
+  {t:"b",v:[
+    {text:"Oil.",sub:[
+      {text:"U.S. didn't monopolize Iraqi oil in 2003.",sub2:[
+        "Contracts went to international companies.",
+        "War threatened energy markets rather than securing them."
+      ]},
+      {text:"A war destabilizing the Strait of Hormuz is the opposite of energy security."},
+      {text:"The oil argument defeats itself."}
+    ]},
+    {text:"Containing China.",sub:[
+      {text:"A war draining U.S. resources weakens America before its more consequential confrontation with China."},
+      {text:"U.S. strategic priority is Taiwan, not Tehran."},
+      {text:"Economic interdependence further complicates confrontation.",sub2:[
+        "China relies on U.S. markets.",
+        "U.S. relies on Chinese manufacturing.",
+        "Supply chains deeply interlocked."
+      ]},
+      {text:"This theory defeats itself."}
+    ]}
+  ]},
+  {t:"h2",v:"7. The explanation that holds: the \"Israeli\" lobby"},
+  {t:"b",v:[
+    {text:"The Iraq War as the key precedent.",sub:[
+      {text:"Removing Saddam served \"Israel\" directly.",sub2:[
+        "Long-term threat eliminated.",
+        "Regional balance reshaped in \"Israel's\" favor."
+      ]},
+      {text:"\"Israeli\" leaders openly backed the invasion."},
+      {text:"The loudest advocates consistently framed it around \"Israeli\" security."},
+      {text:"Rational for \"Israel\" — irrational for the U.S."},
+      {text:"Not classical geopolitics — alliance-driven logic operating through domestic U.S. political influence."},
+      {text:"This is the template. The same structure now applies to Iran."}
+    ]},
+    {text:"Iran is \"Israel's\" sole remaining enemy."},
+    {text:"The lobby absorbed \"Israeli\" strategic priorities into American political culture as American priorities."},
+    {text:"The religious-ideological dimension: visible and open.",sub:[
+      {text:"Before the February 2026 war: Senator Lindsey Graham (Evangelical) made explicitly biblical statements in support of the coming campaign."},
+      {text:"Secretary of Defense Pete Hegseth (Evangelical) did the same."},
+      {text:"In 2025: Secretary of State Marco Rubio appeared on an American TV channel with a cross drawn on his forehead while discussing Gaza."},
+      {text:"Trump appeared at the White House surrounded by Christian clergy praying over foreign policy."},
+      {text:"The religious dimension had ceased to be a background condition — it became the operating system."}
+    ]},
+    {text:"Structural evidence — built over decades of sustained lobbying.",sub:[
+      {text:"Large-scale U.S. aid to \"Israel.\""},
+      {text:"Near-unanimous congressional support over decades."},
+      {text:"Repeated U.S. vetoes at the UN."},
+      {text:"High professional cost for criticizing \"Israel\" in U.S. politics."},
+      {text:"Through consistent money and effort, the \"Israeli\" lobby reshaped American politics until it fully represented \"Israeli\" interests — not as a foreign policy choice but as a domestic political reality."},
+      {text:"The logical conclusion: the current administration, where Evangelical Christianity became the operative ideology of the state.",sub2:[
+        "Gives the relationship with \"Israel\" a theological grounding beyond rational cost-benefit calculation.",
+        "This is what makes the irrationality internally consistent — not confusion, not contradiction, but a different rationality entirely.",
+        "One in which \"Israel's\" interests and God's will have become, for those in power, the same thing."
+      ]}
+    ]},
+    {text:"Gaza 2023 made the pattern undeniable."}
+  ]},
+  {t:"h2",v:"Conclusion"},
+  {t:"b",v:[
+    {text:"The war is not impulsive — it is the latest step in a long pattern."},
+    {text:"Rational for \"Israel\" — irrational for America."},
+    {text:"Paid for with U.S. resources, global stability, and Iranian children's lives."},
+    {text:"The U.S. is not \"Israel's\" ally — it is \"Israel's\" instrument.",sub:[
+      {text:"The tail really does wag the dog."}
+    ]},
+    {text:"A ceasefire changes nothing structurally.",sub:[
+      {text:"A pause is not a resolution."},
+      {text:"The first direct war (June 2025) ended without ending anything."},
+      {text:"The structural condition remains untouched.",sub2:[
+        "The Iranian state exists.",
+        "\"Israel\" considers that existence an existential threat it cannot coexist with indefinitely.",
+        "Understanding why requires understanding what kind of state Iran actually is — not a state with a deep state within it, but a state that is deep."
+      ]}
+    ]},
+    {text:"The nuclear question.",sub:[
+      {text:"The fear is not that Iran will use nuclear weapons.",sub2:[
+        "Deterrence theory: mutual nuclear capability is a guarantee against use, not a path toward it.",
+        "If both sides have it, neither can fire without being destroyed in return."
+      ]},
+      {text:"The fear is that Iranian nuclear weapons will exist.",sub2:[
+        "Their existence makes the Iranian state permanently unkillable.",
+        "Places the resistance project under a deterrence umbrella no conventional campaign can pierce.",
+        "Gives Iran not the ability to destroy \"Israel\" — but the ability to survive \"Israel.\""
+      ]},
+      {text:"That is the threat.",sub2:[
+        "Not the warhead.",
+        "The permanence."
+      ]}
+    ]},
+    {text:"The next war is a structural certainty.",sub:[
+      {text:"Based on the theory that most consistently explained \"Israel's\" behavior and U.S. foreign policy.",sub2:[
+        "The same theory that explained the Iraq War.",
+        "That explained Gaza 2023.",
+        "That makes sense of every decision in this article."
+      ]},
+      {text:"If the Iranian state survives this war in its current form: another war before January 20, 2029.",sub2:[
+        "Trump's presidency ends on that date.",
+        "Trump is not an aberration — he is the most honest expression of the Washington–\"Israel\" relationship.",
+        "\"Israel\" knows this window — political cover, military cooperation, ideological fusion — will not stay open."
+      ]},
+      {text:"The question is not whether. It is when."}
+    ]}
+  ]}
+];
+
+let fmt='article';
+function setFormat(f){fmt=f;document.getElementById('btn-article').classList.toggle('active',f==='article');document.getElementById('btn-bullets').classList.toggle('active',f==='bullets');render();}
+function render(){
+  const w=document.getElementById('wrap');w.classList.add('fading');
+  setTimeout(()=>{
+    const blocks=fmt==='article'?article:bullets;
+    const showHr=fmt==='article';
+    let h='';
+    blocks.forEach(b=>{
+      if(b.t==='p') h+=`<p>${b.v}</p>`;
+      else if(b.t==='h2') h+=`<h2>${b.v}</h2>`;
+      else if(b.t==='hr'&&showHr) h+=`<hr>`;
+      else if(b.t==='b') h+=renderBullets(b.v);
+    });
+    document.getElementById('content').innerHTML=h;
+    w.classList.remove('fading');
+  },180);
+}
+render();
+</script>
+</body>
+</html>
