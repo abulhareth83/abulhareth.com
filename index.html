@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -40,8 +39,6 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-heigh
 .card-meta{display:flex;align-items:center;gap:8px;margin-bottom:0.7rem;flex-wrap:wrap}
 .card-date{font-size:10px;letter-spacing:0.08em;padding:2px 7px;border:1px solid var(--border-med);border-radius:3px;color:var(--muted);font-family:var(--font-ui);font-weight:300}
 .card-langs{font-size:11px;color:var(--faint);font-family:var(--font-ui);font-weight:300;margin-left:auto}
-.card-langs a{text-decoration:none;color:inherit}
-.card-langs a:hover{text-decoration:underline}
 .card-title-en{font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.25;color:var(--text);margin-bottom:0.4rem}
 .card-title-ar{font-family:var(--font-ar);font-size:22px;font-weight:400;color:var(--muted);direction:rtl;line-height:1.45}
 .card-arrow{display:inline-block;margin-top:0.8rem;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--faint);font-family:var(--font-ui);font-weight:300}
@@ -59,88 +56,94 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-heigh
 .footer-about{font-size:12px;color:rgba(255,255,255,0.4);font-family:var(--font-ui);font-weight:300;text-align:center;line-height:1.7}
 .footer-about-ar{font-size:13px;color:rgba(255,255,255,0.4);font-family:var(--font-ar);text-align:center;line-height:1.8;direction:rtl;unicode-bidi:plaintext}
 .footer-copy{font-size:11px;color:rgba(255,255,255,0.2);font-family:var(--font-ui);font-weight:300;letter-spacing:0.05em;margin-top:0.2rem}
+@media(max-width:600px){
+  .site-header{height:56px}.name-en,.name-ar{font-size:21px}
+  .main{padding:2rem 1.1rem 4rem}.card-title-en,.card-title-ar{font-size:19px}
+}
 </style>
 </head>
-
 <body>
-
 <header class="site-header">
-<div class="site-header-inner">
-<a class="site-name" href="index.html">
-<span class="name-en">Laith Abulhareth</span>
-<span class="name-div"></span>
-<span class="name-ar">ليث أبو الحارث</span>
-</a>
-</div>
+  <div class="site-header-inner">
+    <a class="site-name" href="index.html">
+      <span class="name-en">Laith Abulhareth</span>
+      <span class="name-div"></span>
+      <span class="name-ar">ليث أبو الحارث</span>
+    </a>
+  </div>
 </header>
-
-<div class="hero-band">
-<h1>Essays & Analysis</h1>
-</div>
-
+<div class="hero-band"><h1>Essays &amp; Analysis</h1></div>
 <main class="main">
 
-<div class="section-block">
-<p class="section-label">Essays <span class="section-label-ar">— المقالات</span></p>
+  <div class="section-block">
+    <p class="section-label">Essays <span class="section-label-ar">— المقالات</span></p>
+    <div class="essay-list">
 
-<div class="essay-list">
+      <a class="essay-card" href="article-deep-state-1.html">
+        <div class="card-meta">
+          <span class="card-date">April 2026</span>
+          <span class="card-langs">EN · AR</span>
+        </div>
+        <h2 class="card-title-en">The Unyielding State — Part 1: When the Head Falls and the Body Keeps Fighting</h2>
+        <p class="card-title-ar">الدولة التي لا تلين — الجزء الأول: عندما يسقط الرأس ويواصل الجسد القتال</p>
+        <span class="card-arrow">Read →</span>
+      </a>
 
-<a class="essay-card" href="article-deep-state-1.html">
-<div class="card-meta">
-<span class="card-date">April 2026</span>
-<span class="card-langs">
-<a href="article-deep-state-1.html">EN</a> · 
-<a href="ar/article-deep-state-1.html">AR</a>
-</span>
-</div>
-<h2 class="card-title-en">The Unyielding State — Part 1: When the Head Falls and the Body Keeps Fighting</h2>
-<p class="card-title-ar">الدولة التي لا تلين — الجزء الأول: عندما يسقط الرأس ويواصل الجسد القتال</p>
-<span class="card-arrow">Read →</span>
-</a>
+      <a class="essay-card" href="article-deep-state.html">
+        <div class="card-meta">
+          <span class="card-date">April 2026</span>
+          <span class="card-langs">EN · AR</span>
+        </div>
+        <h2 class="card-title-en">The Unyielding State — Part 2: A State With a Deep State, and a State That Is Deep</h2>
+        <p class="card-title-ar">الدولة التي لا تلين — الجزء الثاني: دولة ذات دولة عميقة داخلها، ودولة هي نفسها عميقة</p>
+        <span class="card-arrow">Read →</span>
+      </a>
 
-<a class="essay-card" href="article-deep-state.html">
-<div class="card-meta">
-<span class="card-date">April 2026</span>
-<span class="card-langs">
-<a href="article-deep-state.html">EN</a> · 
-<a href="ar/article-deep-state.html">AR</a>
-</span>
-</div>
-<h2 class="card-title-en">The Unyielding State — Part 2: A State With a Deep State, and a State That Is Deep</h2>
-<p class="card-title-ar">الدولة التي لا تلين — الجزء الثاني: دولة ذات دولة عميقة داخلها، ودولة هي نفسها عميقة</p>
-<span class="card-arrow">Read →</span>
-</a>
+      <a class="essay-card" href="article-iran.html">
+        <div class="card-meta">
+          <span class="card-date">April 2026</span>
+          <span class="card-langs">EN · AR</span>
+        </div>
+        <h2 class="card-title-en">Why Was the War on Iran Inevitable?</h2>
+        <p class="card-title-ar">لماذا كانت الحرب على إيران حتمية؟</p>
+        <span class="card-arrow">Read →</span>
+      </a>
 
-<a class="essay-card" href="article-iran.html">
-<div class="card-meta">
-<span class="card-date">April 2026</span>
-<span class="card-langs">
-<a href="article-iran.html">EN</a> · 
-<a href="ar/article-iran.html">AR</a>
-</span>
-</div>
-<h2 class="card-title-en">Why Was the War on Iran Inevitable?</h2>
-<p class="card-title-ar">لماذا كانت الحرب على إيران حتمية؟</p>
-<span class="card-arrow">Read →</span>
-</a>
+      <!-- ADD NEXT ESSAY HERE -->
 
-</div>
-</div>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <p class="section-label">Videos <span class="section-label-ar">— الفيديوهات</span></p>
+    <div class="placeholder-grid">
+      <div class="placeholder-card"><span class="placeholder-label">Video</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
+      <div class="placeholder-card"><span class="placeholder-label">Video</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
+      <div class="placeholder-card"><span class="placeholder-label">Video</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <p class="section-label">Books <span class="section-label-ar">— الكتب</span></p>
+    <div class="placeholder-grid">
+      <div class="placeholder-card"><span class="placeholder-label">Book</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
+      <div class="placeholder-card"><span class="placeholder-label">Book</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
+      <div class="placeholder-card"><span class="placeholder-label">Book</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
+    </div>
+  </div>
 
 </main>
-
 <footer class="site-footer">
-<div class="site-footer-inner">
-<div class="footer-name">
-<span class="footer-name-en">Laith Abulhareth</span>
-<span class="footer-div"></span>
-<span class="footer-name-ar">ليث أبو الحارث</span>
-</div>
-<p class="footer-about">Essays, videos, and books by Laith Abulhareth.</p>
-<p class="footer-about-ar">مقالات وفيديوهات وكتب بقلم ليث أبو الحارث.</p>
-<p class="footer-copy">© 2026 Laith Abulhareth · All rights reserved</p>
-</div>
+  <div class="site-footer-inner">
+    <div class="footer-name">
+      <span class="footer-name-en">Laith Abulhareth</span>
+      <span class="footer-div"></span>
+      <span class="footer-name-ar">ليث أبو الحارث</span>
+    </div>
+    <p class="footer-about">Essays, videos, and books by Laith Abulhareth.</p>
+    <p class="footer-about-ar">مقالات وفيديوهات وكتب بقلم ليث أبو الحارث.</p>
+    <p class="footer-copy">&copy; 2026 Laith Abulhareth · All rights reserved</p>
+  </div>
 </footer>
-
 </body>
 </html>
