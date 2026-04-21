@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FQFKJ0S19Z"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FQFKJ0S19Z');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Laith Abulhareth — ليث أبو الحارث</title>
 <meta name="description" content="Essays, videos, and books by Laith Abulhareth.">
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<!-- Canonical -->
+<link rel="canonical" href="https://abulhareth.com/">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Laith Abulhareth">
+<meta property="og:title" content="Laith Abulhareth — ليث أبو الحارث">
+<meta property="og:description" content="Essays, videos, and books by Laith Abulhareth. مقالات وفيديوهات وكتب بقلم ليث أبو الحارث.">
+<meta property="og:url" content="https://abulhareth.com/">
+<meta property="og:image" content="https://abulhareth.com/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_SA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Laith Abulhareth — ليث أبو الحارث">
+<meta name="twitter:description" content="Essays, videos, and books by Laith Abulhareth.">
+<meta name="twitter:image" content="https://abulhareth.com/images/og-default.jpg">
+<meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
 <style>
@@ -69,7 +80,31 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-heigh
   .site-header{height:56px}.name-en,.name-ar{font-size:21px}
   .main{padding:2rem 1.1rem 4rem}.card-title-en,.card-title-ar{font-size:19px}
 }
+
+/* Load More */
+.load-more-wrap{text-align:center;padding:1.5rem 0 .5rem}
+.load-more-btn{font-family:var(--font-ui);font-size:12px;font-weight:300;color:var(--muted);background:transparent;border:1px solid var(--border-med);border-radius:4px;padding:8px 24px;cursor:pointer;letter-spacing:.06em;transition:all .14s}
+.load-more-btn:hover{background:#f0ece6;color:var(--text)}
+.essay-card.hidden{display:none}
+/* Video cards */
+.video-card{background:var(--surface);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:border-color .14s}
+.video-card:hover{border-color:var(--border-med)}
+.video-card a{text-decoration:none;color:inherit;display:block}
+.video-thumb{position:relative;width:100%;padding-top:56.25%;background:#1a1a1a;overflow:hidden}
+.video-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(100%)}
+.video-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:28px;color:rgba(255,255,255,.8);background:rgba(0,0,0,.2);transition:background .14s}
+.video-card:hover .video-play{background:rgba(0,0,0,.4)}
+.video-title{font-family:var(--font-display);font-size:15px;font-weight:400;color:var(--text);padding:.8rem .9rem .3rem;line-height:1.4}
+.video-date{font-size:11px;font-weight:300;color:var(--faint);padding:0 .9rem .8rem;letter-spacing:.04em}
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FQFKJ0S19Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FQFKJ0S19Z');
+</script>
 </head>
 <body>
 <header class="site-header">
@@ -123,8 +158,43 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-heigh
     </div>
   </div>
 
+  <!-- English Videos -->
   <div class="section-block">
-    <p class="section-label">Videos <span class="section-label-ar">— الفيديوهات</span></p>
+    <p class="section-label">Videos — الفيديوهات <span class="section-label-ar">· English / الإنجليزية</span></p>
+    <!-- VIDEO CARD TEMPLATE (copy & fill):
+    <div class="video-card">
+      <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" rel="noopener">
+        <div class="video-thumb">
+          <img src="https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg" alt="VIDEO_TITLE_EN">
+          <div class="video-play">&#9654;</div>
+        </div>
+        <p class="video-title">VIDEO_TITLE_EN</p>
+        <p class="video-date">VIDEO_DATE</p>
+      </a>
+    </div>
+    -->
+    <div class="placeholder-grid">
+      <div class="placeholder-card"><span class="placeholder-label">Video</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
+      <div class="placeholder-card"><span class="placeholder-label">Video</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
+      <div class="placeholder-card"><span class="placeholder-label">Video</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
+    </div>
+  </div>
+
+  <!-- Arabic Videos -->
+  <div class="section-block">
+    <p class="section-label">Videos — الفيديوهات <span class="section-label-ar">· Arabic / العربية</span></p>
+    <!-- VIDEO CARD TEMPLATE (copy & fill):
+    <div class="video-card">
+      <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" rel="noopener">
+        <div class="video-thumb">
+          <img src="https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg" alt="VIDEO_TITLE_AR">
+          <div class="video-play">&#9654;</div>
+        </div>
+        <p class="video-title" style="direction:rtl;text-align:right;font-family:var(--font-ar)">VIDEO_TITLE_AR</p>
+        <p class="video-date">VIDEO_DATE</p>
+      </a>
+    </div>
+    -->
     <div class="placeholder-grid">
       <div class="placeholder-card"><span class="placeholder-label">Video</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
       <div class="placeholder-card"><span class="placeholder-label">Video</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
@@ -154,5 +224,32 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-heigh
     <p class="footer-copy">&copy; 2026 Laith Abulhareth · All rights reserved</p>
   </div>
 </footer>
+
+<script>
+// Load More — shows first 5 essay cards, hides rest
+(function(){
+  const cards = document.querySelectorAll('.essay-card');
+  const limit = 5;
+  if(cards.length <= limit) return;
+  cards.forEach((c,i)=>{ if(i>=limit) c.classList.add('hidden'); });
+  const wrap = document.createElement('div');
+  wrap.className = 'load-more-wrap';
+  const btn = document.createElement('button');
+  btn.className = 'load-more-btn';
+  btn.textContent = 'Load More';
+  let shown = limit;
+  btn.onclick = function(){
+    const hidden = document.querySelectorAll('.essay-card.hidden');
+    let count = 0;
+    hidden.forEach(c=>{ if(count<5){c.classList.remove('hidden');count++;} });
+    shown += count;
+    if(shown >= cards.length) wrap.remove();
+  };
+  wrap.appendChild(btn);
+  document.querySelector('.essay-list').after(wrap);
+})();
+// Auto copyright year
+document.querySelectorAll('.footer-copy').forEach(el=>{el.innerHTML=el.innerHTML.replace(/\d{4}/,new Date().getFullYear())});
+</script>
 </body>
 </html>
