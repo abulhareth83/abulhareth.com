@@ -1,15 +1,31 @@
 <!DOCTYPE html>
+<!-- ============================================================
+  ABULHARETH.COM — HOMEPAGE TEMPLATE
+  Save as: index.html in repo ROOT
+
+  TO ADD A NEW ESSAY CARD: copy one .essay-card block and fill in:
+  - CARD_DATE_EN      e.g. April 2026
+  - CARD_SLUG         e.g. article-iran (no .html) — links to EN version
+  - CARD_TITLE_EN     English title (Playfair Display)
+  - CARD_TITLE_AR     Arabic title (Noto Naskh Arabic)
+
+  Cards appear newest-first. No editing needed elsewhere.
+
+  RULES:
+  - "Israel" and derivatives always in quotation marks in card titles
+============================================================ -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Laith Abulhareth — ليث أبو الحارث</title>
-<meta name="description" content="Essays, videos, and books by Laith Abulhareth.">
-<!-- Favicon -->
+<meta name="description" content="Essays, videos, and books by Laith Abulhareth. مقالات وفيديوهات وكتب بقلم ليث أبو الحارث.">
+<!-- 2. Favicon -->
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
-<!-- Canonical -->
+<!-- 3. Canonical -->
 <link rel="canonical" href="https://abulhareth.com/">
-<!-- Open Graph -->
+<!-- 1. Open Graph — WhatsApp, Telegram, Signal, WeChat, Twitter/X, LinkedIn -->
+<!-- og-default.jpg: upload a 1200x630 branded image to images/ for homepage sharing previews -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Laith Abulhareth">
 <meta property="og:title" content="Laith Abulhareth — ليث أبو الحارث">
@@ -29,63 +45,44 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --bg:#f9f7f4;--surface:#fff;--text:#181818;
-  --muted:#5c5c5c;--faint:#a0a0a0;
-  --border:#e4dfd9;--border-med:#cdc7c0;
-  --font-ar:'Noto Naskh Arabic',serif;
-  --font-display:'Playfair Display',Georgia,serif;
-  --font-name:'Amiri',serif;
-  --font-ui:'DM Sans',sans-serif;
-}
+:root{--bg:#f9f7f4;--surface:#fff;--text:#181818;--muted:#5c5c5c;--faint:#a0a0a0;--border:#e4dfd9;--border-med:#cdc7c0;--font-display:'Playfair Display',Georgia,serif;--font-ar:'Noto Naskh Arabic',serif;--font-name:'Amiri',serif;--font-ui:'DM Sans',sans-serif;}
 body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-height:100vh}
-.site-header{background:#181818;height:66px;display:flex;align-items:center;justify-content:center;padding:0 1.5rem;position:sticky;top:0;z-index:100}
-.site-header-inner{max-width:740px;width:100%;display:flex;align-items:center;justify-content:center}
-.site-name{display:flex;align-items:center;gap:14px;text-decoration:none}
-.name-en{font-family:var(--font-name);font-size:26px;font-weight:700;letter-spacing:0.02em;color:#fff}
-.name-div{width:1px;height:22px;background:rgba(255,255,255,0.25)}
-.name-ar{font-family:var(--font-name);font-size:26px;font-weight:700;color:#fff}
-.hero-band{background:var(--surface);border-bottom:1px solid var(--border);padding:3rem 2rem 2.5rem;text-align:center}
-.hero-band h1{font-family:var(--font-ui);font-size:11px;font-weight:300;letter-spacing:0.22em;text-transform:uppercase;color:var(--faint)}
-.main{max-width:740px;margin:0 auto;padding:3rem 1.5rem 5rem}
-.section-block{margin-top:3.5rem}
-.section-block:first-child{margin-top:0}
-.section-label{display:flex;align-items:baseline;gap:8px;font-family:var(--font-ui);font-size:10px;font-weight:300;letter-spacing:0.22em;text-transform:uppercase;color:var(--faint);margin-bottom:1.5rem;padding-bottom:0.75rem;border-bottom:1px solid var(--border)}
-.section-label-ar{font-family:var(--font-ar);font-size:12px;font-weight:400;letter-spacing:0;text-transform:none;color:var(--faint)}
-.essay-list{display:flex;flex-direction:column}
-.essay-card{display:block;text-decoration:none;color:inherit;padding:1.6rem 0;border-bottom:1px solid var(--border);transition:opacity 0.15s}
-.essay-card:last-child{border-bottom:none}
-.essay-card:hover{opacity:0.65}
-.card-meta{display:flex;align-items:center;gap:8px;margin-bottom:0.7rem;flex-wrap:wrap}
-.card-date{font-size:10px;letter-spacing:0.08em;padding:2px 7px;border:1px solid var(--border-med);border-radius:3px;color:var(--muted);font-family:var(--font-ui);font-weight:300}
-.card-langs{font-size:11px;color:var(--faint);font-family:var(--font-ui);font-weight:300;margin-left:auto}
-.card-title-en{font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.25;color:var(--text);margin-bottom:0.4rem}
-.card-title-ar{font-family:var(--font-ar);font-size:22px;font-weight:400;color:var(--muted);direction:rtl;line-height:1.45}
-.card-arrow{display:inline-block;margin-top:0.8rem;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--faint);font-family:var(--font-ui);font-weight:300}
-.placeholder-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1px;background:var(--border);border:1px solid var(--border)}
-.placeholder-card{background:var(--surface);padding:2rem 1.5rem;display:flex;flex-direction:column;gap:0.4rem;min-height:120px}
-.placeholder-label{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--border-med);font-family:var(--font-ui);font-weight:300}
-.placeholder-line{height:1px;background:var(--border);width:36px;margin:0.3rem 0}
-.placeholder-coming{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--border-med);font-family:var(--font-ui);font-weight:300;margin-top:auto}
-.site-footer{background:#181818;padding:2.5rem 1.5rem;margin-top:4rem}
-.site-footer-inner{max-width:740px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:0.7rem}
-.footer-name{display:flex;align-items:center;gap:12px}
-.footer-name-en{font-family:var(--font-name);font-size:20px;font-weight:700;color:#fff;letter-spacing:0.02em}
-.footer-div{width:1px;height:18px;background:rgba(255,255,255,0.25)}
-.footer-name-ar{font-family:var(--font-name);font-size:20px;font-weight:700;color:#fff}
-.footer-about{font-size:12px;color:rgba(255,255,255,0.4);font-family:var(--font-ui);font-weight:300;text-align:center;line-height:1.7}
-.footer-about-ar{font-size:13px;color:rgba(255,255,255,0.4);font-family:var(--font-ar);text-align:center;line-height:1.8;direction:rtl;unicode-bidi:plaintext}
-.footer-copy{font-size:11px;color:rgba(255,255,255,0.2);font-family:var(--font-ui);font-weight:300;letter-spacing:0.05em;margin-top:0.2rem}
-@media(max-width:600px){
-  .site-header{height:56px}.name-en,.name-ar{font-size:21px}
-  .main{padding:2rem 1.1rem 4rem}.card-title-en,.card-title-ar{font-size:19px}
-}
 
-/* Load More */
-.load-more-wrap{text-align:center;padding:1.5rem 0 .5rem}
-.load-more-btn{font-family:var(--font-ui);font-size:12px;font-weight:300;color:var(--muted);background:transparent;border:1px solid var(--border-med);border-radius:4px;padding:8px 24px;cursor:pointer;letter-spacing:.06em;transition:all .14s}
-.load-more-btn:hover{background:#f0ece6;color:var(--text)}
-.essay-card.hidden{display:none}
+/* Header */
+.site-header{background:#181818;height:66px;display:flex;align-items:center;justify-content:center;padding:0 1.5rem;position:sticky;top:0;z-index:100}
+.site-header-inner{width:740px;max-width:100%;display:flex;align-items:center;justify-content:center}
+.site-name{display:flex;align-items:center;gap:14px;text-decoration:none}
+.name-en{font-family:var(--font-name);font-size:26px;font-weight:700;letter-spacing:.02em;color:#fff}
+.name-div{width:1px;height:22px;background:rgba(255,255,255,.25)}
+.name-ar{font-family:var(--font-name);font-size:26px;font-weight:700;color:#fff}
+
+/* Hero band */
+.hero-band{padding:3.5rem 1.5rem 2.5rem;text-align:center}
+.hero-label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--faint);font-weight:300}
+
+/* Main layout */
+.main{max-width:740px;margin:0 auto;padding:0 1.5rem 5rem}
+
+/* Section headings */
+.section-heading{display:flex;align-items:baseline;gap:10px;margin-bottom:1.6rem;padding-bottom:.7rem;border-bottom:1px solid var(--border)}
+.section-label-en{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:300;color:var(--muted)}
+.section-label-ar{font-family:var(--font-ar);font-size:13px;color:var(--faint);font-weight:400}
+.section-divider{width:1px;height:12px;background:var(--border);margin:0 2px}
+
+/* Essay cards */
+.essays-list{display:flex;flex-direction:column}
+.essay-card{display:block;text-decoration:none;color:inherit;padding:1.6rem 0;border-bottom:1px solid var(--border);transition:background .12s}
+.essay-card:last-child{border-bottom:none}
+.essay-card:hover{background:#f4f1ec;margin:0 -1rem;padding-left:1rem;padding-right:1rem}
+.card-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:.7rem}
+.card-date{font-size:11px;font-weight:300;color:var(--faint);letter-spacing:.04em;border:1px solid var(--border);border-radius:3px;padding:2px 8px}
+.card-langs{font-size:11px;font-weight:300;color:var(--faint);letter-spacing:.06em}
+.card-title-en{font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.3;color:var(--text);margin-bottom:.5rem}
+.card-title-ar{font-family:var(--font-ar);font-size:20px;font-weight:400;line-height:1.6;color:var(--muted);direction:rtl;text-align:right}
+.card-arrow{display:block;font-size:12px;font-weight:300;color:var(--faint);margin-top:.8rem;letter-spacing:.04em}
+
+
+
 /* Video cards */
 .video-card{background:var(--surface);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:border-color .14s}
 .video-card:hover{border-color:var(--border-med)}
@@ -96,6 +93,29 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-heigh
 .video-card:hover .video-play{background:rgba(0,0,0,.4)}
 .video-title{font-family:var(--font-display);font-size:15px;font-weight:400;color:var(--text);padding:.8rem .9rem .3rem;line-height:1.4}
 .video-date{font-size:11px;font-weight:300;color:var(--faint);padding:0 .9rem .8rem;letter-spacing:.04em}
+/* Load More */
+.load-more-wrap{text-align:center;padding:1.5rem 0 .5rem}
+.load-more-btn{font-family:var(--font-ui);font-size:12px;font-weight:300;color:var(--muted);background:transparent;border:1px solid var(--border-med);border-radius:4px;padding:8px 24px;cursor:pointer;letter-spacing:.06em;transition:all .14s}
+.load-more-btn:hover{background:#f0ece6;color:var(--text)}
+.essay-card.hidden{display:none}
+/* Placeholder grids (videos/books) */
+.placeholder-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1rem;margin-bottom:3rem}
+.placeholder-card{background:var(--surface);border:1px solid var(--border);border-radius:4px;height:120px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:300;color:var(--faint);letter-spacing:.08em}
+
+.section-gap{margin-bottom:3.5rem}
+
+/* Footer */
+.site-footer{background:#181818;padding:2.5rem 1.5rem;margin-top:4rem}
+.site-footer-inner{max-width:740px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:.7rem}
+.footer-name{display:flex;align-items:center;gap:12px}
+.footer-name-en{font-family:var(--font-name);font-size:20px;font-weight:700;color:#fff;letter-spacing:.02em}
+.footer-div{width:1px;height:18px;background:rgba(255,255,255,.25)}
+.footer-name-ar{font-family:var(--font-name);font-size:20px;font-weight:700;color:#fff}
+.footer-about{font-size:12px;color:rgba(255,255,255,.4);font-family:var(--font-ui);font-weight:300;text-align:center;line-height:1.7}
+.footer-about-ar{font-size:13px;color:rgba(255,255,255,.4);font-family:var(--font-ar);text-align:center;line-height:1.8;direction:rtl;unicode-bidi:plaintext}
+.footer-copy{font-size:11px;color:rgba(255,255,255,.2);font-family:var(--font-ui);font-weight:300;letter-spacing:.05em;margin-top:.2rem}
+
+@media(max-width:600px){.site-header{height:56px}.name-en,.name-ar{font-size:20px}.card-title-en{font-size:18px}.card-title-ar{font-size:17px}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQFKJ0S19Z"></script>
@@ -107,6 +127,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-heigh
 </script>
 </head>
 <body>
+
 <header class="site-header">
   <div class="site-header-inner">
     <a class="site-name" href="index.html">
@@ -116,12 +137,52 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-heigh
     </a>
   </div>
 </header>
-<div class="hero-band"><h1>Essays &amp; Analysis</h1></div>
+
+<div class="hero-band">
+  <p class="hero-label">Essays &amp; Analysis</p>
+</div>
+
 <main class="main">
 
-  <div class="section-block">
-    <p class="section-label">Essays <span class="section-label-ar">— المقالات</span></p>
-    <div class="essay-list">
+  <!-- ── ESSAYS SECTION ─────────────────────────────────── -->
+  <div class="section-gap">
+    <div class="section-heading">
+      <span class="section-label-en">Essays</span>
+      <span class="section-divider"></span>
+      <span class="section-label-ar">المقالات</span>
+    </div>
+
+    <div class="essays-list">
+
+      <!-- ════════════════════════════════════════════════
+           ADD NEW ESSAY CARDS HERE — newest first
+           Copy this block, fill in the 4 placeholders,
+           paste above the previous card.
+      ════════════════════════════════════════════════ -->
+
+      <!-- CARD TEMPLATE (copy & fill)
+      <a class="essay-card" href="CARD_SLUG.html">
+        <div class="card-meta">
+          <span class="card-date">CARD_DATE_EN</span>
+          <span class="card-langs">EN · AR</span>
+        </div>
+        <h2 class="card-title-en">CARD_TITLE_EN</h2>
+        <p class="card-title-ar">CARD_TITLE_AR</p>
+        <span class="card-arrow">Read →</span>
+      </a>
+      -->
+
+      <!-- ── EXISTING CARDS — newest first ── -->
+
+      <a class="essay-card" href="article-ai-capital.html">
+        <div class="card-meta">
+          <span class="card-date">April 2026</span>
+          <span class="card-langs">EN · AR</span>
+        </div>
+        <h2 class="card-title-en">AI? You Are Afraid of the Wrong Thing</h2>
+        <p class="card-title-ar">الذكاء الاصطناعي؟ أنتَ تخاف من الشيء الخطأ</p>
+        <span class="card-arrow">Read →</span>
+      </a>
 
       <a class="essay-card" href="article-deep-state-1.html">
         <div class="card-meta">
@@ -153,65 +214,77 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-heigh
         <span class="card-arrow">Read →</span>
       </a>
 
-      <!-- ADD NEXT ESSAY HERE -->
-
     </div>
   </div>
 
+  <!-- ── VIDEOS SECTION ─────────────────────────────────── -->
   <!-- English Videos -->
-  <div class="section-block">
-    <p class="section-label">Videos — الفيديوهات <span class="section-label-ar">· English / الإنجليزية</span></p>
-    <!-- VIDEO CARD TEMPLATE (copy & fill):
-    <div class="video-card">
-      <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" rel="noopener">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg" alt="VIDEO_TITLE_EN">
-          <div class="video-play">&#9654;</div>
-        </div>
-        <p class="video-title">VIDEO_TITLE_EN</p>
-        <p class="video-date">VIDEO_DATE</p>
-      </a>
+  <div class="section-gap">
+    <div class="section-heading">
+      <span class="section-label-en">Videos — الفيديوهات</span>
+      <span class="section-divider"></span>
+      <span class="section-label-ar">English / الإنجليزية</span>
     </div>
-    -->
     <div class="placeholder-grid">
-      <div class="placeholder-card"><span class="placeholder-label">Video</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
-      <div class="placeholder-card"><span class="placeholder-label">Video</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
-      <div class="placeholder-card"><span class="placeholder-label">Video</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
+      <!-- VIDEO CARD TEMPLATE (copy & fill):
+      <div class="video-card">
+        <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" rel="noopener">
+          <div class="video-thumb">
+            <img src="https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg" alt="VIDEO_TITLE_EN">
+            <div class="video-play">&#9654;</div>
+          </div>
+          <p class="video-title">VIDEO_TITLE_EN</p>
+          <p class="video-date">VIDEO_DATE</p>
+        </a>
+      </div>
+      -->
+      <div class="placeholder-card">Coming soon</div>
+      <div class="placeholder-card">Coming soon</div>
+      <div class="placeholder-card">Coming soon</div>
     </div>
   </div>
 
   <!-- Arabic Videos -->
-  <div class="section-block">
-    <p class="section-label">Videos — الفيديوهات <span class="section-label-ar">· Arabic / العربية</span></p>
-    <!-- VIDEO CARD TEMPLATE (copy & fill):
-    <div class="video-card">
-      <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" rel="noopener">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg" alt="VIDEO_TITLE_AR">
-          <div class="video-play">&#9654;</div>
-        </div>
-        <p class="video-title" style="direction:rtl;text-align:right;font-family:var(--font-ar)">VIDEO_TITLE_AR</p>
-        <p class="video-date">VIDEO_DATE</p>
-      </a>
+  <div class="section-gap">
+    <div class="section-heading">
+      <span class="section-label-en">Videos — الفيديوهات</span>
+      <span class="section-divider"></span>
+      <span class="section-label-ar">Arabic / العربية</span>
     </div>
-    -->
     <div class="placeholder-grid">
-      <div class="placeholder-card"><span class="placeholder-label">Video</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
-      <div class="placeholder-card"><span class="placeholder-label">Video</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
-      <div class="placeholder-card"><span class="placeholder-label">Video</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
+      <!-- VIDEO CARD TEMPLATE (copy & fill):
+      <div class="video-card">
+        <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" rel="noopener">
+          <div class="video-thumb">
+            <img src="https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg" alt="VIDEO_TITLE_AR">
+            <div class="video-play">&#9654;</div>
+          </div>
+          <p class="video-title" style="direction:rtl;text-align:right;font-family:var(--font-ar)">VIDEO_TITLE_AR</p>
+          <p class="video-date">VIDEO_DATE</p>
+        </a>
+      </div>
+      -->
+      <div class="placeholder-card">Coming soon</div>
+      <div class="placeholder-card">Coming soon</div>
+      <div class="placeholder-card">Coming soon</div>
     </div>
   </div>
 
-  <div class="section-block">
-    <p class="section-label">Books <span class="section-label-ar">— الكتب</span></p>
+  <!-- ── BOOKS SECTION ──────────────────────────────────── -->
+  <div class="section-gap">
+    <div class="section-heading">
+      <span class="section-label-en">Books</span>
+      <span class="section-divider"></span>
+      <span class="section-label-ar">الكتب</span>
+    </div>
     <div class="placeholder-grid">
-      <div class="placeholder-card"><span class="placeholder-label">Book</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
-      <div class="placeholder-card"><span class="placeholder-label">Book</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
-      <div class="placeholder-card"><span class="placeholder-label">Book</span><div class="placeholder-line"></div><span class="placeholder-coming">Coming soon</span></div>
+      <div class="placeholder-card">Coming soon</div>
+      <div class="placeholder-card">Coming soon</div>
     </div>
   </div>
 
 </main>
+
 <footer class="site-footer">
   <div class="site-footer-inner">
     <div class="footer-name">
@@ -224,6 +297,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-heigh
     <p class="footer-copy">&copy; 2026 Laith Abulhareth · All rights reserved</p>
   </div>
 </footer>
+
+<script>document.querySelectorAll(".footer-copy").forEach(el=>{el.innerHTML=el.innerHTML.replace(/\d{4}/,new Date().getFullYear())});</script>
 
 <script>
 // Load More — shows first 5 essay cards, hides rest
@@ -246,10 +321,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-heigh
     if(shown >= cards.length) wrap.remove();
   };
   wrap.appendChild(btn);
-  document.querySelector('.essay-list').after(wrap);
+  document.querySelector('.essays-list').after(wrap);
 })();
-// Auto copyright year
-document.querySelectorAll('.footer-copy').forEach(el=>{el.innerHTML=el.innerHTML.replace(/\d{4}/,new Date().getFullYear())});
 </script>
 </body>
 </html>
