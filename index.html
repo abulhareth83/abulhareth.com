@@ -116,6 +116,20 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-heigh
 .footer-copy{font-size:11px;color:rgba(255,255,255,.2);font-family:var(--font-ui);font-weight:300;letter-spacing:.05em;margin-top:.2rem}
 
 @media(max-width:600px){.site-header{height:56px}.name-en,.name-ar{font-size:20px}.card-title-en{font-size:18px}.card-title-ar{font-size:17px}}
+
+/* Instagram strip */
+.ig-strip{background:#181818;border-bottom:1px solid rgba(255,255,255,.07);padding:9px 1.5rem;display:flex;align-items:center;justify-content:center}
+.ig-strip-inner{display:flex;align-items:center;gap:9px;text-decoration:none;opacity:.7;transition:opacity .15s}
+.ig-strip-inner:hover{opacity:1}
+.ig-strip-icon{width:15px;height:15px;fill:#fff;flex-shrink:0}
+.ig-strip-text{font-family:var(--font-ui);font-weight:300;font-size:11px;letter-spacing:.1em;color:rgba(255,255,255,.7)}
+
+
+/* Footer social */
+.footer-social{display:flex;align-items:center;gap:10px;margin-top:.4rem}
+.footer-social-link{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border:1px solid rgba(255,255,255,.15);border-radius:4px;color:rgba(255,255,255,.4);text-decoration:none;transition:all .14s}
+.footer-social-link:hover{border-color:rgba(255,255,255,.4);color:#fff}
+.footer-social-link svg{width:13px;height:13px;fill:currentColor;display:block}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQFKJ0S19Z"></script>
@@ -137,6 +151,13 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-heigh
     </a>
   </div>
 </header>
+
+<a class="ig-strip" href="https://www.instagram.com/abulhareth83" target="_blank" rel="noopener noreferrer">
+  <div class="ig-strip-inner">
+    <svg class="ig-strip-icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    <span class="ig-strip-text">@abulhareth83</span>
+  </div>
+</a>
 
 <div class="hero-band">
   <p class="hero-label">Essays &amp; Analysis</p>
@@ -294,6 +315,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-ui);min-heigh
     </div>
     <p class="footer-about">Essays, videos, and books by Laith Abulhareth.</p>
     <p class="footer-about-ar">مقالات وفيديوهات وكتب بقلم ليث أبو الحارث.</p>
+    <div class="footer-social"><a class="footer-social-link" href="https://www.instagram.com/abulhareth83" target="_blank" rel="noopener noreferrer" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></div>
     <p class="footer-copy">&copy; 2026 Laith Abulhareth · All rights reserved</p>
   </div>
 </footer>
